@@ -1,7 +1,11 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const ContatoDetalhes = () => {
+    const navigate = useNavigate();
+    const click = () => {
+        return navigate('/')
+    }
 
     const {id} = useParams();
     const contatos = [{
@@ -19,6 +23,7 @@ const ContatoDetalhes = () => {
         <div>Contato do Criador {id}</div>
         <h2>Nome: {contatos[id-1].nome}</h2>
         <img src={`https://github.com/${contatos[id-1].user}.png`} alt="" />
+        <button onClick={click}>Voltar</button>
     </>
   )
 }

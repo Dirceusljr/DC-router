@@ -10,7 +10,6 @@ function App({children}) {
       <h1>Olá mundo</h1>
       <h2>Segundo elemento</h2>
       <Outlet />
-      {children}
       <h3>Outro local para elemento</h3>
     </>
   )

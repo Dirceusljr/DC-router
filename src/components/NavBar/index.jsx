@@ -8,6 +8,8 @@ const myStyle = {
     justifyContent: 'center'
 }
 
+
+
 const NavBar = () => {
   return (
     <nav>
